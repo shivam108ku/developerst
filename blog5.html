@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/articlle.css">
+</head>
+<body>
+  
+  <div class="mainart">
+
+    <div class="h1">
+      <h1>
+        2024 Developer Ecosystem: Shedding AI fears, improving DevEx
+      </h1>
+    </div>
+   
+
+    <div class="para">
+      <p>
+        Each year, JetBrains, the maker of developer tools like IntelliJ IDEA and PyCharm, compiles its “State of Developer Ecosystem Report,” and the 2024 edition offers plenty of insights for the tech community to dissect.
+
+        Based on the input of over 26,000 developers worldwide, this year’s edition highlights key trends in programming languages, tools, and processes—placing a particular focus on AI adoption, career shifts, and the state of developer experience (DevEx). 
+        
+        AI’s growing acceptance in development tools
+        Headlining the 2024 report is the diminishing fear surrounding AI among developers.
+        
+        While the rise of AI tools like ChatGPT, GitHub Copilot, and Google Gemini initially came with widespread concerns over their implications for jobs and ethics, the report suggests developers are increasingly embracing these technologies. 
+        
+        AI tools are already paying dividends in productivity. Specifically, “73% of developers have tried, and 56% regularly use, ChatGPT for coding and other development-related activities.”
+        
+        GitHub Copilot, the second most popular tool, has been “tried by 42% and is regularly used by 29%” of developers. This adoption coincides with perceived benefits such as “less time spent searching for information” (67% of respondents) and “faster coding and development” (58%). 
+        
+        Developers estimate that these tools save significant amounts of time, with nearly 60% reporting saving anywhere between 1–4 hours a week. However, adoption remains contested across workplaces, with only 29% of companies allowing the use of third-party AI tools for all projects.
+        <br>
+        A slightly smaller percentage (26%) permit AI tools for only some projects, while 25% admit to having no policy governing AI use. Only 11% prohibit AI entirely.
+        <br>
+        Of course, there are concerns around the AI-driven “new era of slop” for things like security reports.
+        <br>
+        JavaScript reigns while TypeScript and Rust surge
+        JavaScript retains its position as the world’s most popular programming language—used by 61% of developers worldwide to create websites, per JetBrains’ findings. However, TypeScript and Rust are leading a new wave of languages emphasising safety, performance, and developer satisfaction.
+        <br>
+        “Will TypeScript replace JavaScript?” the report rhetorically asks—and answers: “The shortest answer is NO! JavaScript is one of the most popular and fundamental technologies in the software development industry, and it’s safe to say that it isn’t going anywhere soon.”
+        <br>
+        Instead, TypeScript is increasingly viewed as a complementary extension of JavaScript. The language, which introduces static typing to improve error detection and maintainability, has rapidly grown from just 12% adoption in 2017 to a significant 37% this year.
+        <br>
+        Rust, meanwhile, has set a new usage record among popular languages. Known for its robust memory safety guarantees and concurrent programming capabilities, the report notes that as Rust’s user base grows, it is aspiring to “replace C++ with its strict safety and memory ownership mechanisms.” In fact, one in six Go developers surveyed is planning to adopt Rust as their next skill. <br>
+        <br>
+        The report also introduces the JetBrains Language Promise Index, which combines factors like audience growth and developer intent to adopt or switch languages. TypeScript, Rust, and Python dominate this new index, demonstrating bright futures for all three.<br>
+        <br>
+        Python, in particular, continues its steady ascent—now used by over half (57%) of developers globally thanks to its versatility in fields like AI, data science, and web development. The report notes Python’s impressive rise from “a 32% share in our first survey seven years ago” to its current position as an indispensable tool for coding professionals.
+        
+        Split between desktop and mobile development<br>
+        Challenging the notion that mobile development has surpassed desktop, JetBrains finds desktop applications to still have the edge.
+        <br>
+        According to the 2024 edition of the developer ecosystem report, 38% of developers now target desktop platforms for their work compared to 32% for mobiles. Similarly, developers run their code primarily on browsers (58%), but desktops are not far behind at 53%. This balance emphasises the ongoing relevance of desktops in areas needing greater computing power or specialised tooling.
+        <br>
+        Testing has been made more robust and accessible over the years, thanks to tools like Playwright, Selenium, and JetBrains Aqua. Unit tests are the most popular type (used by 78% of developers), followed by integration (63%) and end-to-end (48%) testing. Just 5% of respondents admitted they bypass testing entirely.
+        <br>
+        As for databases, the usual suspects continue to dominate. MySQL, PostgreSQL, MongoDB, SQLite, and Redis remain at the top of most-used databases, demonstrating little disruption in the ecosystem. Open-source solutions seem particularly entrenched as the backbone of today’s applications. Interestingly, PostgreSQL has been steadily gaining share, rising to 45% of developers this year.
+      </p>
+      </div>
+
+      <div class="container">
+        <h1>Enhanced Blog Platform</h1>
+  
+        <h2>Create a New Blog Post</h2>
+        <div class="toolbar">
+            <button onclick="formatText('bold')">Bold</button>
+            <button onclick="formatText('italic')">Italic</button>
+            <button onclick="formatText('underline')">Underline</button>
+            <button onclick="insertLink()">Add Link</button>
+            <button onclick="addBulletPoint()">Add Bullet Point</button>
+        </div>
+  
+        <div id="editor" contenteditable="true" class="editor" placeholder="Write your blog post here..." oninput="updateStats()"></div>
+        
+        <div class="stats">
+            <p id="word-count">Word Count: 0</p>
+            <p id="read-time">Estimated Read Time: 0 minutes</p>
+        </div>
+  
+        <button  class="btn1" onclick="saveBlogPost()">Save Blog Post</button>
+        <button class="btn1" onclick="loadBlogPosts()">Load Blog Posts</button>
+  
+        <div class="blog-posts" id="blog-posts"></div>
+    </div>
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  <button> <a href="index.html"></a></button>
+  <script src="/assets/js/features.js"></script>
+  </body>
+  </html>

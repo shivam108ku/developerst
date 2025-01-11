@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/articlle.css">
+</head>
+<body>
+  
+<div class="mainart">
+    <div class="h1">
+      <h1>Software development trends and predictions for 2025</h1>
+    </div>
+  
+    <div class="para">
+      <p>
+        As the world races towards 2025, Developer examines what lies ahead for software development in the new year.
+        Among the most pressing trends for 2025 are AI development simplification, the integration of cross-functional engineering teams, and the evolution of DevSecOps practices. These shifts promise to redefine how companies approach innovation, security, and efficiency in their development pipelines.
+        <br>
+        AI-powered development simplification
+        Avthar Sewrathan, AI Product Lead at Timescale, predicts a significant transformation in the tech stack landscape by 2025.
+        “The traditional tech stack will continue to collapse,” Sewrathan notes, highlighting advancements driven by APIs and tools that reduce complexity and enable faster development. This shift is anticipated to empower engineers of all skill levels to create impactful AI applications with ease.
+        <br>
+        “By 2025, the traditional tech stack will continue to collapse, fueled by APIs and tools that reduce complexity and enable faster development,” Sewrathan explains. “Companies that deliver frictionless, accessible solutions with low barriers to entry will empower engineers to create impactful AI apps, no matter their level of expertise.”
+        This democratisation of AI app creation is expected to increase competition within the industry as more developers gain access to advanced capabilities. Consistency and reliability in AI applications are also set to become paramount.
+        <br>
+        “As AI apps become central to everyday interactions in 2025, consistency and reliability will take precedence,” Sewrathan observes.
+        Developer role evolution
+        Indu Keri, General Manager and Head of Engineering for Hybrid Cloud at Nutanix, envisions a new era of software development starting in 2025.
+        “Software development and engineering is already being democratised with tools like Copilot,” Keri says.
+        <br>
+        By combining GenAI with low-code solutions, code will be abstracted to the point of irrelevance. AI will generate applications rather than code, enabling developers to step into strategic roles.
+        <br>
+        “The day-to-day for developers will change drastically,” Keri notes. “No longer hamstrung by grunt work, developers will step into an up-leveled, strategic role—communicating with decision-makers about how tech can solve business problems.”
+        <br>
+        This evolution, Keri argues, complements developers’ best qualities – creativity and innovation – and challenges them to grow into leadership roles within their organisations.
+        <br>
+        “By 2025, engineers at any level will be able to create an AI app through the widespread availability of APIs and models,” Sewrathan adds. “But the differentiators will be consistency, usability, and customer impact.”
+        <br>
+        Agentic AI and DevOps automation
+        The hype around agentic AI will reach boiling point in 2025 as organisations bundle specialised agents for different stages of software delivery, including code generation, testing, and quality assurance. This orchestrator-driven approach will drive a more intelligent approach to DevOps automation.
+        <br>
+        Martin Reynolds, Field CTO of Harness, says: “Instead of having one, basic GenAI assistant, organisations will bundle together specialised agents for the different stages of software delivery—such as code generation, testing, and quality assurance.”
+        <br>
+        “One agent will act as the orchestrator, directing the others and producing more accurate insights into the end-to-end process.”
+        Rodrigo Coutinho of OutSystems highlights that agentic AI will answer many, but not all, business problems:<br> “For the last few years, businesses have tried to throw GenAI at all of their problems. The result: GenAI is a remarkable solution for many use cases, but not everything.”
+        <br>
+        “An AI tool is only as good as the data it’s trained on. Just because tech titans are pushing agentic <br>AI right now doesn’t mean you should scrap simpler solutions. Align your AI strategy with your organisation’s needs, rather than the latest shiny object.”
+      </p>
+    </div>
+  
+    
+    <div class="container">
+      <h1>Enhanced Blog Platform</h1>
+
+      <h2>Create a New Blog Post</h2>
+      <div class="toolbar">
+          <button class="btn0" onclick="formatText('bold')">Bold</button>
+          <button class="btn0" onclick="formatText('italic')">Italic</button>
+          <button class="btn0" onclick="formatText('underline')">Underline</button>
+          <button class="btn0" onclick="insertLink()">Add Link</button>
+          <button class="btn0"onclick="addBulletPoint()">Add Bullet Point</button>
+      </div>
+
+      <div id="editor" contenteditable="true" class="editor" placeholder="Write your blog post here..." oninput="updateStats()"></div>
+      
+      <div class="stats">
+          <p id="word-count">Word Count: 0</p>
+          <p id="read-time">Estimated Read Time: 0 minutes</p>
+      </div>
+
+      <button  class="btn1" onclick="saveBlogPost()">Save Blog Post</button>
+      <button class="btn1" onclick="loadBlogPosts()">Load Blog Posts</button>
+
+      <div class="blog-posts" id="blog-posts"></div>
+  </div>
+
+
+</div>
+
+
+
+
+<button> <a href="index.html"></a></button>
+<script src="/assets/js/features.js"></script>
+</body>
+</html>
