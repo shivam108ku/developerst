@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/articlle.css">
+</head>
+<body>
+  
+  <div class="mainart">
+
+    <div class="h1">
+      <h1>
+        Emerging threats in cloud-native application security: Trends to watch
+      </h1>
+    </div>
+   
+
+    <div class="para">
+         <p>
+            Cloud-native technologies let organisations build and run scalable applications in modern IT environments. Cloud applications typically comprise various components that require robust security measures. Containers, service meshes, microservices, infrastructure, and APIs are elements of this approach to designing and building software. However, organisations should adopt comprehensive security solutions that provide complete visibility into security risks and that can deliver actionable insights to mitigate issues effectively.
+
+HCL AppScan 360º, a powerful solution for application security, provides visibility of vulnerabilities and security risks, and offers integrated testing and remediation solutions. It addresses challenges in diverse environments, including cloud-native, on-premise, and hybrid applications, with AI-driven features for real-time risk management, compliance enforcement, and enhanced detection.
+<br>
+To address security challenges and implement best practice, a cloud-native application security platform built on a modern, unified architecture is ideal. HCL AppScan 360º is fast and accurate, offering agile application security testing integrated into every phase of the software lifecycle (SDLC), catching and fixing software issues early, so reducing the risk of security incidents.
+
+This blog will talk about the latest practices for cloud-native applications and cloud security, and highlight some future trends to consider in 2025.
+<br>
+Understanding cloud native applications
+Cloud-native applications are revolutionary in approach, using the potential of cloud computing to meet changing business needs. The role of the cloud service provider (CSP) is important in managing infrastructure security in the cloud layer, highlighting a shared responsibility model for cybersecurity. According to the research, Cloud Evolution 2024: Mandate to Modernize, 78% of organisations agree cloud-based apps are flexible, resilient, and scalable. HCL AppScan 360º focuses on cloud-native topologies and methods, including API acceleration, security integration, low-code agility, and integration with AI.
+
+<br>
+Microservices: Small, independent software components work together to form cloud-native applications, bringing stability, handling component failures and scaling gracefully.
+<br>
+Containerisation: Allows developers to package application code and dependencies into lightweight separate elements. Containers run consistently on any infrastructure, and being lightweight, are often more efficient users of resources.
+<br>
+Continuous Delivery: Automates the deployment of code changes in an environment for continuous testing and sign-off. A streamlined SDLC improves the speed and frequency of build, test, and release.
+<br>
+DevOps: Improves the collaboration between development and operations teams, helping implement auto-scaling and load-balancing to adjust resources and meet demand.
+<br>
+The evolving cloud native security threat landscape
+Cloud-native development isn’t immune from security issues by default. It needs to be well-protected with cloud-native application security. Some emerging threats in cloud security that organisations should be aware of, are:
+<br>
+Misconfiguration of cloud services and infrastructure continues to be a major issue. Cloud resources like storage buckets, databases, and server instances can expose an organisation’s sensitive data to unauthorised access.
+Cloud-native attacks increasingly target cloud-native technologies and services, like containers, serverless computing, and orchestration platforms, using them as a basis from which to launch attacks such as container escapes, serverless function injections, and Kubernetes cluster compromises.
+Zero-day exploits targeting cloud applications can bypass traditional security controls and lead to unauthorised access or data exfiltration.
+Organisations need cloud-native application security solutions that can reduce the risk of the threats and adapt to address new threats. Technologies that prioritise scan accuracy with proven AI capabilities can deliver faster scan coverage and reduce false positives, so developers and security teams can pinpoint, prioritise and fix the most critical security vulnerabilities.
+         </p>
+    </div>
+    <div class="container">
+      <h1>Enhanced Blog Platform</h1>
+
+      <h2>Create a New Blog Post</h2>
+      <div class="toolbar">
+          <button onclick="formatText('bold')">Bold</button>
+          <button onclick="formatText('italic')">Italic</button>
+          <button onclick="formatText('underline')">Underline</button>
+          <button onclick="insertLink()">Add Link</button>
+          <button onclick="addBulletPoint()">Add Bullet Point</button>
+      </div>
+
+      <div id="editor" contenteditable="true" class="editor" placeholder="Write your blog post here..." oninput="updateStats()"></div>
+      
+      <div class="stats">
+          <p id="word-count">Word Count: 0</p>
+          <p id="read-time">Estimated Read Time: 0 minutes</p>
+      </div>
+
+      <button  class="btn1" onclick="saveBlogPost()">Save Blog Post</button>
+      <button class="btn1" onclick="loadBlogPosts()">Load Blog Posts</button>
+
+      <div class="blog-posts" id="blog-posts"></div>
+  </div>
+
+</div>
+
+
+
+
+<button> <a href="index.html"></a></button>
+<script src="/assets/js/features.js"></script>
+</body>
+</html>

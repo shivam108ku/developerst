@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/articlle.css">
+</head>
+<body>
+  
+  <div class="mainart">
+
+    <div class="h1">
+      <h1>
+        Operation Digital Eye: Chinese hackers exploit Visual Studio Code
+    </div>
+   
+
+    <div class="para">
+         <p>
+            A sophisticated cyberespionage operation dubbed “Operation Digital Eye” has been attributed to a suspected Chinese Advanced Persistent Threat (APT) group. 
+<br>
+According to Aleksandar Milenkoski, Senior Threat Researcher at SentinelLabs, and Luigi Martire, Senior Malware Analyst at Tinexta Cyber, the campaign targeted large business-to-business (B2B) IT service providers in southern Europe between late June and mid-July 2024.
+<br>
+Visual Studio Code hijacked
+In what SentinelLabs describes as the “first instance of a suspected Chinese APT group using this technique,” Visual Studio Code’s Remote Tunnels feature was hijacked to maintain command-and-control (C2) connections.
+<br>
+By leveraging software associated with legitimate development workflows, the attackers were able to conceal their malicious activities. 
+<br>
+Remote  Tunnels provides full endpoint access capabilities—including command execution and filesystem interactions. Crucially, the executables involved were digitally signed by Microsoft, while the tunnelling infrastructure used Microsoft’s Azure servers. 
+<br>
+With such tools being integral to legitimate operations, they are unlikely to face stringent scrutiny from application controls and firewalls. This made their misuse “challenging to detect” and granted highly effective covert access to compromised systems.
+<br>
+Objectives and targets
+The attack primarily focused on entities that manage data, infrastructure, and cybersecurity for major industries—making them prime candidates for espionage and enabling downstream access to client organisations.
+<br>
+SentinelLabs and Tinexta Cyber stated in a report that “a sustained presence within these organisations would provide the Operation Digital Eye actors with a strategic foothold, creating opportunities for intrusions across the digital supply chain.”
+<br>
+The timing and sophistication of the campaign strongly point toward a state-sponsored attacker with connections to China’s interests, aiming to access sensitive information and compromise critical IT environments.
+<br>
+Such strategic intelligence can provide “competitive advantages” in economic, geopolitical, and technological domains, reflecting rising tensions in Sino-European relations.
+<br>
+Infection vector and progression
+The attackers used SQL injection to compromise internet-facing web and database servers, relying on the automated tool SQLmap to exploit vulnerabilities.
+<br>
+Once infiltrated, they deployed a PHP-based webshell called PHPsert, which used simplistic yet effective obfuscation techniques to execute PHP code supplied by the attackers. To blend into the targeted environments, they disguised PHPsert files with locally relevant language and technological context.
+<br>
+From the moment of entry, the attackers focused heavily on reconnaissance, employing both third-party tools – such as GetUserInfo – and native Windows utilities like ping. To maintain lateral movement across networks, the group relied on Remote Desktop Protocol (RDP) sessions and a pass-the-hash technique facilitated by a custom-modified Mimikatz variant called bK2o.exe.
+<br>
+Additional access was maintained via SSH-enabled backdoors and Visual Studio Code Remote Tunnels, with the latter being run as background services disguised as legitimate processes.
+<br>
+Visual Studio Code tunnelling exploit
+An extracted winsw configuration file, used to run Visual Studio Code as a Windows service, indicated that a pragmatic approach had been taken by the attackers. The file referenced publicly accessible base samples, with only minor customisations tailored to their illicit purposes.
+<br>
+Once running, Visual Studio Code’s “tunnel” parameter established development tunnels to compromised machines, accessible remotely through either the Visual Studio Code application or its browser version, vscode.dev.
+<br>
+SentinelLabs noted that no direct evidence indicates whether the attackers used self-registered or compromised GitHub accounts to authenticate to these tunnels.
+<br>
+Beyond the development-focused misuse of Visual Studio Code, the attackers exploited infrastructure owned by European service provider M247 alongside Azure servers. This infrastructure – sourced from Microsoft’s Italy North and West Europe datacentres – helped mask activity as local, reducing suspicion while traversing legitimate network pathways.
+         </p>
+    </div>
+
+    <div class="container">
+      <h1>Enhanced Blog Platform</h1>
+
+      <h2>Create a New Blog Post</h2>
+      <div class="toolbar">
+          <button onclick="formatText('bold')">Bold</button>
+          <button onclick="formatText('italic')">Italic</button>
+          <button onclick="formatText('underline')">Underline</button>
+          <button onclick="insertLink()">Add Link</button>
+          <button onclick="addBulletPoint()">Add Bullet Point</button>
+      </div>
+
+      <div id="editor" contenteditable="true" class="editor" placeholder="Write your blog post here..." oninput="updateStats()"></div>
+      
+      <div class="stats">
+          <p id="word-count">Word Count: 0</p>
+          <p id="read-time">Estimated Read Time: 0 minutes</p>
+      </div>
+
+      <button  class="btn1" onclick="saveBlogPost()">Save Blog Post</button>
+      <button class="btn1" onclick="loadBlogPosts()">Load Blog Posts</button>
+
+      <div class="blog-posts" id="blog-posts"></div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<button> <a href="index.html"></a></button>
+<script src="/assets/js/features.js"></script>
+</body>
+</html>

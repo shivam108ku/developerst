@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/articlle.css">
+</head>
+<body>
+  
+  <div class="mainart">
+
+    <div class="h1">
+      <h1>
+        Linux Foundation releases ‘Census III’ open source report"
+    </div>
+   
+
+    <div class="para">
+         <p>
+            The Linux Foundation has released a report that identifies the most commonly used free and open source software (FOSS) application libraries.
+<br>
+Developed in partnership with the Laboratory for Innovation Science at Harvard, the “Census III” report provides invaluable insights into the state of the OSS ecosystem. Leveraging over 12 million data points from production environments across more than 10,000 companies, Census III highlights critical trends and challenges surrounding the use of OSS.
+<br>
+To bring this effort to life, the Linux Foundation collaborated not only with Harvard but also with major organisations specialising in Software Composition Analysis (SCA), including Black Duck, FOSSA, Snyk, and Sonatype. By pooling diverse expertise, data, and resources, the partnership provides new insights into open source software’s widespread adoption and highlights potential risks within the ecosystem.  
+<br>
+David A. Wheeler, Director of Open Source Supply Chain Security at the Open Source Security Foundation (OpenSSF), said: “FOSS is now ubiquitous, serving as a foundational infrastructure of society. However, its success has also made it a target for attackers seeking to exploit vulnerabilities.
+<br>
+“This report provides valuable insights that will help individuals and organisations worldwide prioritise their investments to significantly reduce both the recurrence and impact of vulnerabilities in FOSS – both unintentional and malicious.”
+<br>
+The Census III report identifies several notable trends in open source software usage:  
+<br>
+Rising use of cloud-specific packages: Demand for cloud-focused libraries continues to grow.
+Migration to Python 3: There remains an ongoing transition from the now-deprecated Python 2 to Python 3.
+Expanded popularity: Maven packages, frequently used in Java development, remain widely utilised, while NuGet (associated with .NET) and Python repositories are seeing increased traction.  
+Emerging technologies: Rust package usage has considerably risen compared to the previous Census reports.  
+Legacy code challenges: Outdated software persists in use, adding a layer of complexity to long-term FOSS sustainability.
+Contributors and security: Many of the most extensively deployed FOSS libraries are often maintained by only a small group of contributors, underlining resource shortages and increasing the importance of securing individual developer accounts.  
+Standardisation needs: A lack of consistent naming conventions for software components complicates dependency tracking.  
+The authors also note shifts in the OSS supply chain and its potential vulnerabilities.
+<br>
+Tim Mackey, Head of Software Supply Chain Risk Strategy at Black Duck, commented: “If there are only a handful of contributors to a critical component or if the supplier is effectively one anonymous GitHub user account, the cybersecurity and software hygiene decisions of those individuals could introduce unexpected business risks.”
+<br>
+Transparency and investment  
+Given the pivotal role of FOSS in today’s digital economy, contributors to the report advocate for greater investment in securing and sustaining open source software.
+<br>
+Kevin Wang, CEO of FOSSA, said: “The report clearly reaffirms the ubiquity and continued growing influence of open source on the economy. Government regulations, industry initiatives, and research like this are all instrumental in improving the software supply chain through open communication, which ultimately builds trust.”
+<br>
+The findings align with recent global efforts to improve software security, particularly against the backdrop of rising scrutiny from governments and policymakers regarding critical infrastructure.
+<br>
+Hilary Carter, SVP of Research at the Linux Foundation, added: “Understanding the health and security posture of open source software is a critical step to ensure its sustainability. Census III underscores the importance of identifying and supporting widely used open source components, complementing Linux Foundation projects, initiatives, and security-focused research.”
+<br>
+The report also addresses the importance of mitigating challenges from a decentralised development structure.
+<br>
+Danny Allan, CTO at Snyk, commented: “FOSS forms the backbone of modern technology, yet its decentralised nature presents challenges in understanding its true impact and vulnerabilities. Efforts like the FOSS Census are pivotal, combining community-driven data with analytical rigour to help the industry identify critical dependencies and prioritise investments.”
+<br>
+Building on previous Census reports  
+The Census III report builds on its predecessors, which first sought to highlight critical OSS components and their role in global infrastructure.
+<br>
+The original Census, conducted in 2015, focused specifically on software used in the Debian Linux distribution. Census II expanded its scope, examining language-level OSS packages commonly relied upon by public and private organisations alike.  
+<br>
+Now, Census III significantly broadens this analysis by using anonymised data from partnering software composition analysis companies. This enhanced data makes it easier for stakeholders to understand and prioritise resources for addressing vulnerabilities within the OSS ecosystem.
+<br>
+Census III reinforces the message that open source software is not merely a technological cornerstone but also a shared resource that needs continuous support and safeguarding. Securing FOSS against vulnerabilities – both accidental and malicious – remains a vital step for enabling continued innovation. 
+<br>
+Brian Fox, Co-Founder and CTO of Sonatype, explained: “By providing critical data and insights into FOSS usage, we aim to empower organisations to make informed decisions about securing their software supply chains.”
+<br>
+As more industries integrate OSS into their workflows, the need for collaboration, standardisation, and proactive investment becomes increasingly clear. Census III sets a foundation for stakeholders to address these challenges and contribute to a stronger, more secure open source software ecosystem.
+         </p>
+    </div>
+
+    <div class="container">
+      <h1>Enhanced Blog Platform</h1>
+
+      <h2>Create a New Blog Post</h2>
+      <div class="toolbar">
+          <button onclick="formatText('bold')">Bold</button>
+          <button onclick="formatText('italic')">Italic</button>
+          <button onclick="formatText('underline')">Underline</button>
+          <button onclick="insertLink()">Add Link</button>
+          <button onclick="addBulletPoint()">Add Bullet Point</button>
+      </div>
+
+      <div id="editor" contenteditable="true" class="editor" placeholder="Write your blog post here..." oninput="updateStats()"></div>
+      
+      <div class="stats">
+          <p id="word-count">Word Count: 0</p>
+          <p id="read-time">Estimated Read Time: 0 minutes</p>
+      </div>
+
+      <button  class="btn1" onclick="saveBlogPost()">Save Blog Post</button>
+      <button class="btn1" onclick="loadBlogPosts()">Load Blog Posts</button>
+
+      <div class="blog-posts" id="blog-posts"></div>
+  </div>
+
+
+</div>
+
+
+
+
+<button> <a href="index.html"></a></button>
+<script src="/assets/js/features.js"></script>
+</body>
+</html>
