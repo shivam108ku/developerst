@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevelopersTalk</title>
+    <link rel="stylesheet" href="assets/css/page2.css">
+</head>
+<body>
+
+    <div class="container3">
+        <h1>Enhanced Blog Platform</h1>
+  
+        <h2>Create a New Blog Post</h2>
+        <div class="toolbar">
+            <button onclick="formatText('bold')">Bold</button>
+            <button onclick="formatText('italic')">Italic</button>
+            <button onclick="formatText('underline')">Underline</button>
+            <button onclick="insertLink()">Add Link</button>
+            <button onclick="addBulletPoint()">Add Bullet Point</button>
+        </div>
+  
+        <div id="editor" contenteditable="true" class="editor" placeholder="Write your blog post here..." oninput="updateStats()"></div>
+        
+        <div class="stats">
+            <p id="word-count">Word Count: 0</p>
+            <p id="read-time">Estimated Read Time: 0 minutes</p>
+        </div>
+  
+        <button  class="btn1" onclick="saveBlogPost()">Save Blog Post</button>
+        <button class="btn1" onclick="loadBlogPosts()">Load Blog Posts</button>
+  
+        <div class="blog-posts" id="blog-posts"></div>
+    </div>
+
+
+    <script src="assets/js/features.js"></script>
+
+</body>
+</html>
